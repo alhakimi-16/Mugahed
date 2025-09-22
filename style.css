@@ -1,0 +1,109 @@
+/* Reset & Basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .logo {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  color: #ff9800;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ff9800;
+  display: inline-block;
+}
+
+/* Projects Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  header nav ul.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+    color: #ff9800;
+  }
+}
