@@ -1,4 +1,3 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +5,9 @@
 }
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   background: #f5f8fc;
-  color: #333;
+  color: #222;
+  line-height: 1.6;
 }
 
 /* Header */
@@ -23,11 +22,11 @@ header {
   justify-content: space-between;
 }
 .profile-pic {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border: 3px solid white;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 h1 {
   font-size: 28px;
