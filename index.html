@@ -7,24 +7,23 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container header-content">
-      <img src="profile.jpg" alt="Mugahed Al-Hakimi" class="profile-pic" />
-      <div>
-        <h1>Mugahed Al-Hakimi</h1>
-        <p id="tagline"
-           data-en="Business Informatics Student | Technology, Communication & Business"
-           data-de="Student der Wirtschaftsinformatik | Technologie, Kommunikation & Business">
-          Business Informatics Student | Technology, Communication & Business
-        </p>
-      </div>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <!-- ✅ Updated to use your real profile picture -->
+      <img src="images/profil.png" alt="Mugahed Al-Hakimi" class="profile-pic" />
+      <h1>Mugahed Al-Hakimi</h1>
+      <p id="tagline"
+         data-en="Business Informatics Student | Technology, Communication & Business"
+         data-de="Student der Wirtschaftsinformatik | Technologie, Kommunikation & Business">
+        Business Informatics Student | Technology, Communication & Business
+      </p>
       <div class="lang-switch">
         <button onclick="setLanguage('en')">EN</button>
         <button onclick="setLanguage('de')">DE</button>
       </div>
     </div>
-    <nav>
+    <nav class="navbar">
       <ul>
         <li><a href="#about" data-en="About" data-de="Über mich">About</a></li>
         <li><a href="#skills" data-en="Skills" data-de="Fähigkeiten">Skills</a></li>
@@ -36,7 +35,7 @@
   </header>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2 data-en="About Me" data-de="Über mich">About Me</h2>
     <p id="about-text"
        data-en="I am preparing to start my studies in Business Informatics (Wirtschaftsinformatik) at HAW Hamburg, with a strong focus on the intersection between technology, communication, and business processes. My main interest lies in understanding how innovative technical solutions can be integrated into everyday interactions and organizational workflows, enabling more efficient communication and collaboration. 
@@ -53,19 +52,23 @@ Neben meinem akademischen Weg nehme ich mir die Zeit, mich über aktuelle Entwic
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="fade-in">
     <h2 data-en="Skills" data-de="Fähigkeiten">Skills</h2>
-    <ul>
-      <li data-en="Critical Thinking, Problem Solving, Decision Making, Creative Thinking"
-          data-de="Kritisches Denken, Problemlösung, Entscheidungsfindung, Kreatives Denken"></li>
-      <li data-en="Java Programming" data-de="Java-Programmierung"></li>
-      <li data-en="Microsoft Office Specialist (MOS)" data-de="Microsoft Office Specialist (MOS)"></li>
-      <li data-en="Communication, Concentration, Collaboration" data-de="Kommunikation, Konzentration, Zusammenarbeit"></li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-card" data-en="Critical Thinking" data-de="Kritisches Denken">Critical Thinking</div>
+      <div class="skill-card" data-en="Problem Solving" data-de="Problemlösung">Problem Solving</div>
+      <div class="skill-card" data-en="Decision Making" data-de="Entscheidungsfindung">Decision Making</div>
+      <div class="skill-card" data-en="Creative Thinking" data-de="Kreatives Denken">Creative Thinking</div>
+      <div class="skill-card" data-en="Java Programming" data-de="Java-Programmierung">Java Programming</div>
+      <div class="skill-card" data-en="Microsoft Office Specialist (MOS)" data-de="Microsoft Office Specialist (MOS)">Microsoft Office Specialist (MOS)</div>
+      <div class="skill-card" data-en="Communication" data-de="Kommunikation">Communication</div>
+      <div class="skill-card" data-en="Concentration" data-de="Konzentration">Concentration</div>
+      <div class="skill-card" data-en="Collaboration" data-de="Zusammenarbeit">Collaboration</div>
+    </div>
   </section>
 
   <!-- Experience -->
-  <section id="experience">
+  <section id="experience" class="fade-in">
     <h2 data-en="Experience" data-de="Erfahrung">Experience</h2>
     <p id="exp-text"
        data-en="Currently working in the IVP Department, responsible for data maintenance (Datenpflege). Through this role, I have been able to expand my soft skills such as communication, concentration, and professional collaboration."
@@ -74,7 +77,7 @@ Neben meinem akademischen Weg nehme ich mir die Zeit, mich über aktuelle Entwic
   </section>
 
   <!-- Education -->
-  <section id="education">
+  <section id="education" class="fade-in">
     <h2 data-en="Education" data-de="Ausbildung">Education</h2>
     <p id="edu-text"
        data-en="I successfully graduated from a foundation year at Leibniz University Hannover, where I improved my German language skills and studied scientific subjects entirely taught in German. This experience allowed me to practice my knowledge and expand my perspectives by meeting people from different countries and cultures. 
@@ -87,7 +90,7 @@ Ab Oktober werde ich mein Bachelorstudium in Wirtschaftsinformatik an der HAW Ha
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2 data-en="Contact" data-de="Kontakt">Contact</h2>
     <p>Email: <a href="mailto:hakimi.mujahed@gmail.com">hakimi.mujahed@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/mugahed-al-hakimi" target="_blank">linkedin.com/in/mugahed-al-hakimi</a></p>
