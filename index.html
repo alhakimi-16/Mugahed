@@ -3,76 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Mugahed Al-Hakimi | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="container">
-      <h1 class="logo">My Portfolio</h1>
-      <nav id="navbar">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="menu-toggle" id="menu-toggle">☰</div>
-      </nav>
+    <div class="container header-content">
+      <img src="profile.jpg" alt="Mugahed Al-Hakimi" class="profile-pic" />
+      <div>
+        <h1>Mugahed Al-Hakimi</h1>
+        <p id="tagline" data-en="Business Informatics Student | Tech & Business Enthusiast"
+           data-de="Student der Wirtschaftsinformatik | Technik- & Business-Enthusiast">
+          Business Informatics Student | Tech & Business Enthusiast
+        </p>
+      </div>
+      <div class="lang-switch">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('de')">DE</button>
+      </div>
     </div>
+    <nav>
+      <ul>
+        <li><a href="#about" data-en="About" data-de="Über mich">About</a></li>
+        <li><a href="#skills" data-en="Skills" data-de="Fähigkeiten">Skills</a></li>
+        <li><a href="#experience" data-en="Experience" data-de="Erfahrung">Experience</a></li>
+        <li><a href="#education" data-en="Education" data-de="Ausbildung">Education</a></li>
+        <li><a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- About -->
   <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Hi, I’m <strong>Your Name</strong>, an IT enthusiast.  
-        I love working on automation, web apps, and data visualization.  
-        This portfolio highlights some of my work.
-      </p>
-    </div>
+    <h2 data-en="About Me" data-de="Über mich">About Me</h2>
+    <p id="about-text"
+       data-en="I am preparing to start my studies in Business Informatics at HAW Hamburg, focusing on the intersection of technology, communication, and business processes. My passion lies in integrating innovative solutions into everyday workflows to enhance collaboration and efficiency. Technology for me is a bridge between people and possibilities. Beyond academics, I enjoy exploring trends in digital business and technology that inspire my vision of future innovations."
+       data-de="Ich bereite mich darauf vor, mein Studium in Wirtschaftsinformatik an der HAW Hamburg zu beginnen, mit Fokus auf der Schnittstelle zwischen Technologie, Kommunikation und Geschäftsprozessen. Meine Leidenschaft liegt darin, innovative Lösungen in alltägliche Abläufe zu integrieren, um Zusammenarbeit und Effizienz zu verbessern. Für mich ist Technologie eine Brücke zwischen Menschen und Möglichkeiten. Neben dem Studium beschäftige ich mich gerne mit aktuellen Trends im digitalen Business und in der Technologie, die meine Sicht auf zukünftige Innovationen prägen.">
+      I am preparing to start my studies in Business Informatics at HAW Hamburg...
+    </p>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Project 1" />
-          <h3>Project 1</h3>
-          <p>Short description of your project.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Project 2" />
-          <h3>Project 2</h3>
-          <p>Another cool project.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Project 3" />
-          <h3>Project 3</h3>
-          <p>Something innovative you built.</p>
-        </div>
-      </div>
-    </div>
+  <!-- Skills -->
+  <section id="skills">
+    <h2 data-en="Skills" data-de="Fähigkeiten">Skills</h2>
+    <ul>
+      <li data-en="Critical Thinking, Problem Solving, Decision Making, Creative Thinking"
+          data-de="Kritisches Denken, Problemlösung, Entscheidungsfindung, Kreatives Denken">
+        Critical Thinking, Problem Solving, Decision Making, Creative Thinking
+      </li>
+      <li data-en="Java Programming" data-de="Java-Programmierung">Java Programming</li>
+      <li data-en="Microsoft Office (MOS)" data-de="Microsoft Office (MOS)">Microsoft Office (MOS)</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2 data-en="Experience" data-de="Erfahrung">Experience</h2>
+    <p id="exp-text"
+       data-en="Currently working in the IVP Department, responsible for data maintenance. Through this role, I have strengthened my soft skills such as communication, focus, and collaboration."
+       data-de="Derzeit arbeite ich in der IVP-Abteilung, wo ich für die Datenpflege verantwortlich bin. In dieser Rolle konnte ich meine Soft Skills wie Kommunikation, Konzentration und Zusammenarbeit weiterentwickeln.">
+      Currently working in the IVP Department...
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2 data-en="Education" data-de="Ausbildung">Education</h2>
+    <p id="edu-text"
+       data-en="I completed a foundation year at Leibniz University Hannover, improving my German and scientific knowledge. I am now excited to begin my Bachelor’s studies in Business Informatics at HAW Hamburg in October."
+       data-de="Ich habe ein Studienkolleg an der Leibniz Universität Hannover absolviert, wo ich meine Deutschkenntnisse und wissenschaftliches Wissen verbessert habe. Ab Oktober beginne ich mein Bachelorstudium in Wirtschaftsinformatik an der HAW Hamburg.">
+      I completed a foundation year at Leibniz University Hannover...
+    </p>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Your Name | Made with ❤️</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  <section id="co

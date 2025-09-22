@@ -1,17 +1,6 @@
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
+// Language toggle function
+function setLanguage(lang) {
+  document.querySelectorAll("[data-en]").forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
   });
-});
-
-// Mobile menu toggle
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.querySelector("nav ul");
-
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
+}
