@@ -1,106 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mugahed Al-Hakimi | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Hero Section -->
+  <!-- Hero Section (Fixed) -->
   <header class="hero">
     <div class="hero-content">
-      <!-- ✅ Profile picture path fixed -->
-      <img src="image/profil.png" alt="Mugahed Al-Hakimi" class="profile-pic" />
+      <img src="image/profil.png" alt="Mugahed Al-Hakimi" class="profile-pic">
       <h1>Mugahed Al-Hakimi</h1>
-      <p id="tagline"
-         data-en="Business Informatics Student | Technology, Communication & Business"
-         data-de="Student der Wirtschaftsinformatik | Technologie, Kommunikation & Business">
-        Business Informatics Student | Technology, Communication & Business
-      </p>
-      <div class="lang-switch">
+      <p class="subtitle">Student der Wirtschaftsinformatik | Technologie, Kommunikation & Business</p>
+
+      <!-- Language Switch -->
+      <div class="language-switch">
         <button onclick="setLanguage('en')">EN</button>
         <button onclick="setLanguage('de')">DE</button>
       </div>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="#about">Über mich</a>
+        <a href="#skills">Fähigkeiten</a>
+        <a href="#experience">Erfahrung</a>
+        <a href="#education">Ausbildung</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
     </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#about" data-en="About" data-de="Über mich">About</a></li>
-        <li><a href="#skills" data-en="Skills" data-de="Fähigkeiten">Skills</a></li>
-        <li><a href="#experience" data-en="Experience" data-de="Erfahrung">Experience</a></li>
-        <li><a href="#education" data-en="Education" data-de="Ausbildung">Education</a></li>
-        <li><a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- About -->
-  <section id="about" class="fade-in">
-    <h2 data-en="About Me" data-de="Über mich">About Me</h2>
-    <p id="about-text"
-       data-en="I am preparing to start my studies in Business Informatics (Wirtschaftsinformatik) at HAW Hamburg, with a strong focus on the intersection between technology, communication, and business processes. My main interest lies in understanding how innovative technical solutions can be integrated into everyday interactions and organizational workflows, enabling more efficient communication and collaboration. 
+  <!-- Main Content -->
+  <main>
+    <section id="about" class="card">
+      <h2>Über mich</h2>
+      <p>
+        Ich bereite mich darauf vor, mein Studium in Wirtschaftsinformatik an der HAW Hamburg zu beginnen, 
+        mit einem starken Fokus auf der Schnittstelle zwischen Technologie, Kommunikation und Geschäftsprozessen. 
+        Mein Hauptinteresse liegt darin, zu verstehen, wie innovative technische Lösungen in alltägliche Interaktionen 
+        und organisatorische Abläufe integriert werden können, um effizientere Kommunikation und Zusammenarbeit zu ermöglichen.
+      </p>
+      <p>
+        Mich treibt nicht nur die technische Seite von Systemen und Daten an, sondern auch die Art und Weise, wie Ideen und 
+        Lösungen präsentiert, geteilt und vermarktet werden können, um echten Einfluss zu schaffen. 
+        Ich sehe Technologie als Brücke zwischen Menschen und Möglichkeiten. 
+        Mein langfristiges Ziel ist es, zu Projekten beizutragen, in denen Technologie, Wirtschaft und menschliche Interaktion 
+        zusammenkommen, um sinnvolle Ergebnisse zu liefern.
+      </p>
+      <p>
+        Außerhalb meines akademischen Werdegangs halte ich mich stets über aktuelle Entwicklungen im Bereich 
+        Technologie und digitales Business auf dem Laufenden. Mich begeistert es, neue Trends, Tools und Konzepte 
+        zu erkunden, die prägen, wie wir heute leben und arbeiten. 
+      </p>
+    </section>
 
-What drives me is not only the technical side of systems and data but also the way ideas and solutions can be presented, shared, and marketed to create real impact. I see technology as a bridge between people and possibilities, and I am eager to develop the skills that will allow me to combine analytical thinking with clear communication. My long-term goal is to contribute to projects where technology, business, and human interaction come together to deliver meaningful results. 
+    <section id="skills" class="card">
+      <h2>Fähigkeiten</h2>
+      <ul>
+        <li>Kritisches Denken</li>
+        <li>Problemlösung</li>
+        <li>Entscheidungsfindung</li>
+        <li>Kreatives Denken</li>
+        <li>Java Programmierung</li>
+        <li>MOS (Microsoft Office Specialist)</li>
+      </ul>
+    </section>
 
-Outside my academic path, I dedicate time to staying updated on current developments in the fields of technology and digital business. I enjoy exploring emerging trends, tools, and concepts that shape how we live and work today. This continuous curiosity helps me strengthen my understanding of the industry and inspires me to think about how future innovations can be applied in practice."
-       data-de="Ich bereite mich darauf vor, mein Studium in Wirtschaftsinformatik an der HAW Hamburg zu beginnen, mit einem starken Fokus auf der Schnittstelle zwischen Technologie, Kommunikation und Geschäftsprozessen. Mein Hauptinteresse liegt darin, zu verstehen, wie innovative technische Lösungen in alltägliche Interaktionen und organisatorische Abläufe integriert werden können, um effizientere Kommunikation und Zusammenarbeit zu ermöglichen. 
+    <section id="experience" class="card">
+      <h2>Erfahrung</h2>
+      <p>
+        Aktuell arbeite ich in der IVP-Abteilung eines Unternehmens, wo ich für <strong>Datenpflege</strong> 
+        (data maintenance) verantwortlich bin. Diese Tätigkeit ermöglicht es mir, meine Soft Skills wie 
+        Kommunikation und Konzentration weiterzuentwickeln.
+      </p>
+    </section>
 
-Was mich antreibt, ist nicht nur die technische Seite von Systemen und Daten, sondern auch die Art und Weise, wie Ideen und Lösungen präsentiert, geteilt und vermarktet werden können, um echte Wirkung zu erzielen. Ich sehe Technologie als Brücke zwischen Menschen und Möglichkeiten und bin bestrebt, Fähigkeiten zu entwickeln, die es mir ermöglichen, analytisches Denken mit klarer Kommunikation zu verbinden. Mein langfristiges Ziel ist es, zu Projekten beizutragen, in denen Technologie, Wirtschaft und menschliche Interaktion zusammenkommen, um bedeutungsvolle Ergebnisse zu liefern. 
+    <section id="education" class="card">
+      <h2>Ausbildung</h2>
+      <p>
+        Ich habe erfolgreich ein Studienkolleg an der Leibniz Universität Hannover abgeschlossen, wo ich meine 
+        Deutschkenntnisse verbessert und naturwissenschaftliche Fächer auf Deutsch studiert habe. 
+        Dabei konnte ich meinen Horizont erweitern und mit Menschen aus verschiedenen Ländern und Kulturen in Kontakt treten.
+      </p>
+      <p>
+        Ab Oktober beginne ich mein Bachelorstudium in <strong>Wirtschaftsinformatik</strong> an der HAW Hamburg.
+      </p>
+    </section>
 
-Neben meinem akademischen Weg nehme ich mir die Zeit, mich über aktuelle Entwicklungen in den Bereichen Technologie und digitales Business auf dem Laufenden zu halten. Ich interessiere mich für neue Trends, Tools und Konzepte, die unser heutiges Leben und Arbeiten prägen. Diese kontinuierliche Neugier hilft mir, mein Verständnis der Branche zu stärken und inspiriert mich, darüber nachzudenken, wie zukünftige Innovationen in der Praxis angewendet werden können.">
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="fade-in">
-    <h2 data-en="Skills" data-de="Fähigkeiten">Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card" data-en="Critical Thinking" data-de="Kritisches Denken">Critical Thinking</div>
-      <div class="skill-card" data-en="Problem Solving" data-de="Problemlösung">Problem Solving</div>
-      <div class="skill-card" data-en="Decision Making" data-de="Entscheidungsfindung">Decision Making</div>
-      <div class="skill-card" data-en="Creative Thinking" data-de="Kreatives Denken">Creative Thinking</div>
-      <div class="skill-card" data-en="Java Programming" data-de="Java-Programmierung">Java Programming</div>
-      <div class="skill-card" data-en="Microsoft Office Specialist (MOS)" data-de="Microsoft Office Specialist (MOS)">Microsoft Office Specialist (MOS)</div>
-      <div class="skill-card" data-en="Communication" data-de="Kommunikation">Communication</div>
-      <div class="skill-card" data-en="Concentration" data-de="Konzentration">Concentration</div>
-      <div class="skill-card" data-en="Collaboration" data-de="Zusammenarbeit">Collaboration</div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="fade-in">
-    <h2 data-en="Experience" data-de="Erfahrung">Experience</h2>
-    <p id="exp-text"
-       data-en="Currently working in the IVP Department, responsible for data maintenance (Datenpflege). Through this role, I have been able to expand my soft skills such as communication, concentration, and professional collaboration."
-       data-de="Derzeit arbeite ich in der IVP-Abteilung, wo ich für die Datenpflege verantwortlich bin. Durch diese Rolle konnte ich meine Soft Skills wie Kommunikation, Konzentration und professionelle Zusammenarbeit erweitern.">
-    </p>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="fade-in">
-    <h2 data-en="Education" data-de="Ausbildung">Education</h2>
-    <p id="edu-text"
-       data-en="I successfully graduated from a foundation year at Leibniz University Hannover, where I improved my German language skills and studied scientific subjects entirely taught in German. This experience allowed me to practice my knowledge and expand my perspectives by meeting people from different countries and cultures. 
-
-Starting in October, I will begin my Bachelor studies in Business Informatics at HAW Hamburg, where I am excited to continue combining my passion for technology, communication, and business."
-       data-de="Ich habe erfolgreich ein Studienkolleg an der Leibniz Universität Hannover abgeschlossen, wo ich meine Deutschkenntnisse verbessert und wissenschaftliche Fächer studiert habe, die vollständig auf Deutsch unterrichtet wurden. Diese Erfahrung ermöglichte es mir, mein Wissen praktisch anzuwenden und meine Perspektiven zu erweitern, indem ich Menschen aus verschiedenen Ländern und Kulturen kennenlernte. 
-
-Ab Oktober werde ich mein Bachelorstudium in Wirtschaftsinformatik an der HAW Hamburg beginnen, wo ich meine Leidenschaft für Technologie, Kommunikation und Wirtschaft weiter vertiefen möchte.">
-    </p>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="fade-in">
-    <h2 data-en="Contact" data-de="Kontakt">Contact</h2>
-    <p>Email: <a href="mailto:hakimi.mujahed@gmail.com">hakimi.mujahed@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/mugahed-al-hakimi-36a2122bb/" target="_blank">linkedin.com/in/mugahed-al-hakimi</a></p>
-    <p>GitHub: <a href="https://github.com/alhakimi-16" target="_blank">github.com/alhakimi-16</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Mugahed Al-Hakimi</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <section id="contact" class="card">
+      <h2>Kontakt</h2>
+      <p>Email: <a href="mailto:hakimi.mujahed@gmail.com">hakimi.mujahed@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mugahed-al-hakimi-36a2122bb/" target="_blank">Mein LinkedIn Profil</a></p>
+    </section>
+  </main>
 </body>
 </html>
